@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorYellow"
+        android:padding="10dp"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_back"
+            android:tint="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:text="Event list"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:text="Event"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:src="@drawable/ic_done"
+            android:tint="@color/colorWhite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llHeader"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            app:hintEnabled="false">
+            <!--app:hintTextAppearance="@style/CustomTextAppearance"-->
+            <AutoCompleteTextView
+                android:id="@+id/txtId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Id"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            app:hintEnabled="false">
+            <!--app:hintTextAppearance="@style/CustomTextAppearance"-->
+            <AutoCompleteTextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Event Name"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilVenue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            app:hintEnabled="false">
+            <!--app:hintTextAppearance="@style/CustomTextAppearance"-->
+            <AutoCompleteTextView
+                android:id="@+id/txtVenue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Event Venue"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            app:hintEnabled="false">
+            <!--app:hintTextAppearance="@style/CustomTextAppearance"-->
+            <AutoCompleteTextView
+                android:id="@+id/txtStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Start date/time"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            app:hintEnabled="false">
+            <!--app:hintTextAppearance="@style/CustomTextAppearance"-->
+            <AutoCompleteTextView
+                android:id="@+id/txtEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="End date/time"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilTimeZone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            app:hintEnabled="false">
+            <!--app:hintTextAppearance="@style/CustomTextAppearance"-->
+            <AutoCompleteTextView
+                android:id="@+id/txtTimeZone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="TimeZone"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+</RelativeLayout>
