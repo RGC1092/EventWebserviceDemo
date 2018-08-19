@@ -18,8 +18,7 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     
-    //Rahul CHandore New COde
-    String add ="";
+   
     Context context = this;
     LinearLayout llContents;
     ListView lvEvent;
